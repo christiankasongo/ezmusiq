@@ -1,0 +1,30 @@
+{
+  "main": [
+    {
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
+      "name": "What we do",
+      "url": "/elements"
+    },
+    {
+      "name": "Contact",
+      "url": "/elements"
+    },
+    {
+      "name": "Pricing",
+      "url": "/elements"
+    }
+  ],
+  "footer": [
+    {
+      "name": "FAQ",
+      "url": "/elements"
+    },
+    {
+      "name": "Privacy Policy",
+      "url": "/privacy-policy"
+    }
+  ]
+}
