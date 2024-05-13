@@ -1,6 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 import menu from "../config/menu.json";
+import BookingButton from "../components/BookingButton.astro";
 
 export interface ChildNavigationLink {
   name: string;
@@ -19,7 +20,7 @@ const { pathname } = Astro.url;
 
 ---
 
-<header class="sticky top-0 z-30 py-6">
+<header class="sticky top-0 z-30 py-6 bg-[#F5F5F5]">
     <nav class="relative container flex flex-wrap items-center justify-between">
         <!--Logo-->
         <div class="order-0">
@@ -30,7 +31,7 @@ const { pathname } = Astro.url;
         <input id="nav-toggle" type="checkbox" class="hidden"/>
         <label
         for="nav-toggle"
-        class="order-3 cursor-pointer flex items-center lg:hidden text-primary lg:order-1"
+        class="order-3 cursor-pointer flex items-center lg:hidden text-[#040404] lg:order-1"
       >
         <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
           <title>Menu Open</title>
@@ -105,23 +106,13 @@ const { pathname } = Astro.url;
       }
       {
           <li class="mt-4 inline-block lg:hidden">
-            <a
-              class="btn btn-outline-primary btn-sm"
-              href=""
-            >
-              Booking button
-            </a>
+            <BookingButton morestyle=""/>
           </li>
       }
 </ul>
 <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-        <a
-          class="btn btn-outline-primary btn-sm hidden lg:inline-block"
-          href=""
-        >
-          Booking button
-        </a>
-        
+    <BookingButton morestyle="hidden lg:inline-block"/>
   </div>
+
     </nav>
 </header>

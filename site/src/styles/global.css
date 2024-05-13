@@ -1,3 +1,11 @@
+html {
+  @apply text-sm md:text-base text-primary;
+  font-family: "Heebo", sans-serif;
+  background: #f4f5f7;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
 input#nav-toggle:checked + label #show-button {
   @apply hidden;
 }
@@ -18,7 +26,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply block p-3 font-semibold transition lg:px-2 lg:py-3;
+  @apply text-[#040404] block p-3 font-semibold transition lg:px-2 lg:py-3;
 }
 
 .nav-dropdown {
@@ -34,7 +42,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply block py-1 font-semibold transition;
+  @apply block py-1 font-semibold text-[#040404] transition;
 }
 /* .btn-primary {
   @apply text-primary text-xs font-semibold uppercase py-2 px-4 rounded-lg shadow;
