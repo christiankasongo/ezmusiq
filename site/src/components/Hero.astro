@@ -1,0 +1,71 @@
+---
+import Image from "astro/components/Image.astro";
+import HeroImage from "../resources/imgs/studio.jpg";
+import BookingButton from "../components/BookingButton.astro";
+---
+<section id="/" class="section pt-14">
+  <div class="container">
+<div class="grid grid-cols-12 justify-center text-center">
+  <div class="col-span-12 md:col-span-9 lg:col-span-6 lg:col-start-4 mb-8">
+    <h1 class="mb-4">EzMusiq: your premier choice for quality music production and recording</h1>
+    <p class="mb-8 text-base md:text-lg">
+      Our cutting-edge studio, equipped with the latest technology and a creative atmosphere, helps artists of all genres achieve their musical vision.
+    </p>
+    <div class="hidden lg:flex justify-center gap-8">
+      <a href="#Services" class="btn-secondary text-center inline-flex items-center justify-center">
+        Podcast Studio
+      </a>
+      <a href="#Services" class="btn-primary text-center inline-flex items-center justify-center">
+        Siging Lessons
+      </a>
+    </div>
+    <BookingButton Buttontext="Book Now" morestyle="lg:hidden"/>
+  </div>
+  <div class="col-span-12">
+    <Image src={HeroImage} class="object-cover rounded shadow max-w-xl mx-auto" alt="banner" format="webp"/>
+  </div>
+</div>
+
+</div>
+  </div>
+</section>
+<!-- <section id="/" class="backgroundpic min-h-[60vh]">
+    <div class="container mx-auto min-h-[60vh] py-8">
+      <div class="grid md:grid-cols-2 place-items-center pt-24">
+        <div class="pt-6 order-2 md:order-1">
+          <Image src={HeroImage} alt="hero picture" class="hidden lg:block object-cover rounded shadow max-w-md mx-auto"/>
+        </div>
+        <div class="w-full xl:w-10/12">
+          <h1
+            class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+            Welcome to EzMusiq
+          </h1>
+          <p class="text-lg mt-4 text-slate-600 max-w-xl">
+            Your premier destination for high-quality music production and recording.
+          </p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a href="#Services" class="btn-secondary text-center inline-flex items-center justify-center">
+            Podcast Studio
+          </a>
+          <a href="#Services" class="btn-primary text-center inline-flex items-center justify-center">
+            Siging Lessons
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section> -->
+
+    <style>
+  .hero-bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../resources/imgs/herobg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+    </style>

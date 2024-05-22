@@ -1,11 +1,12 @@
 ---
 interface Props {
 	morestyle: string;
+    Buttontext:string;
 }
 
-const { morestyle } = Astro.props;
+const { morestyle, Buttontext } = Astro.props;
 ---
 
 <a id="Setmore_button_iframe" href="https://booking.setmore.com/scheduleappointment/66e313f1-5800-46d1-9e9e-74c42844b800" target='_blank' class=`btn-primary text-center inline-flex items-center justify-center ${morestyle}`>
-    Book a studio
+{Buttontext}
 </a>

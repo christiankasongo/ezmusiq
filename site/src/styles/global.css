@@ -1,9 +1,31 @@
 html {
   @apply text-sm md:text-base text-primary;
-  font-family: "Heebo", sans-serif;
-  background: #f4f5f7;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
   scroll-behavior: smooth;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+body {
+  @apply bg-[#f4f5f7] text-base font-Sora leading-relaxed;
+}
+
+code {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  @apply py-6 xl:py-7;
+}
+
+.container {
+  @apply mx-auto max-w-[1320px] px-6 md:px-4;
 }
 
 input#nav-toggle:checked + label #show-button {
@@ -26,7 +48,7 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-link {
-  @apply text-[#040404] block p-3 font-semibold transition lg:px-2 lg:py-3;
+  @apply text-primary block p-3 transition lg:px-2 lg:py-3 hover:text-[#08605F];
 }
 
 .nav-dropdown {
@@ -42,8 +64,20 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .nav-dropdown-link {
-  @apply block py-1 font-semibold text-[#040404] transition;
+  @apply block py-1 font-semibold text-primary transition;
 }
-/* .btn-primary {
-  @apply text-primary text-xs font-semibold uppercase py-2 px-4 rounded-lg shadow;
-} */
+.btn-primary {
+  @apply text-primary text-base font-semibold py-2 px-4 rounded-tr-lg rounded-bl-lg bg-transparent border border-gray-800 border-solid hover:bg-primaryCol hover:text-white hover:border-white;
+}
+
+.btn-secondary {
+  @apply text-secondary text-base font-semibold py-2 px-4 rounded-tr-lg rounded-bl-lg bg-secondaryCol border border-white border-solid hover:bg-transparent hover:text-primary hover:border-gray-800;
+}
+
+/* Typography */
+h1 {
+  @apply text-black font-semibold text-2xl md:text-3xl;
+}
+p {
+  @apply text-primary;
+}

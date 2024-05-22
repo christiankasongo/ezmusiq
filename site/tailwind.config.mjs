@@ -14,13 +14,16 @@ export default {
       center: true,
     },
     extend: {
-      colors: {},
+      colors: {
+        primaryCol: "#08605F",
+        secondaryCol: "#C8AD55",
+      },
       textColor: {
         primary: "#444444",
+        secondary: "#f4f5f7",
       },
       fontFamily: {
-        primary: ["Heebo", "sans - serif"],
-        secondary: ["Signika", "sans - serif"],
+        Sora: ["Sora", "sans-serif"],
       },
     },
   },

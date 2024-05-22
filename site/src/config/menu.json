@@ -5,12 +5,16 @@
       "url": "/about"
     },
     {
-      "name": "What we do",
+      "name": "The Team",
+      "url": "/elements"
+    },
+    {
+      "name": "Services",
       "url": "/elements"
     },
     {
       "name": "Contact",
-      "url": "/elements"
+      "url": "/privacy-policy"
     },
     {
       "name": "Pricing",
@@ -19,11 +23,11 @@
   ],
   "footer": [
     {
-      "name": "FAQ",
+      "name": "Pricing",
       "url": "/elements"
     },
     {
-      "name": "Privacy Policy",
+      "name": "Podcast Studio",
       "url": "/privacy-policy"
     }
   ]
